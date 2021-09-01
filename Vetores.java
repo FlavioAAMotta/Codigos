@@ -10,7 +10,7 @@ public class Vetores {
         return vetores;
     }
 
-    //Falta implementar
+    //Metodo para realizar a soma de todos os valores do vetor
     private int somaDosValores(){
         int soma = 0;
         for (int i = 0; i < vetores.length; i++) {
@@ -19,6 +19,7 @@ public class Vetores {
         return soma;
     }
 
+    //Metodo que lê o tamanho desejado e os valores do vetor
     public void entraValores(){
         keyboard = new Scanner(System.in);
         System.out.println("Digite o tamanho do vetor");
@@ -31,11 +32,13 @@ public class Vetores {
         }
     }
 
+    //Método para imprimir a soma dos valores do vetor
     public void imprimeSoma(){
         int soma = somaDosValores();
         System.out.println("A soma dos valores do vetor é igual a: " + soma);
     }
 
+    //Método que imprime os valores setados no vetor
     public void imprimeVetor(){
         System.out.print("Vetor: [");
         for (int i = 0; i < vetores.length; i++) {
