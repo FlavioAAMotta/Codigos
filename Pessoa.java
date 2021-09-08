@@ -29,7 +29,7 @@ public class Pessoa {
     
     //Metodo construtor
     public Pessoa(String nome){
-        dinheiroNaConta = 500;
+        this.nome = nome;
     }
 
     public void imprimeSaldo(){
@@ -59,4 +59,17 @@ public class Pessoa {
             return peso / (Math.pow(altura, 2));
     }
 
+    @Override
+    public String toString(){
+        return this.nome + this.sobrenome;
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if(obj instanceof Pessoa){
+            Pessoa p = (Pessoa) obj;
+            return this.nome.equals(p.getNome());
+        }
+        return false;
+    }
 }

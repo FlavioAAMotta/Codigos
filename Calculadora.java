@@ -17,6 +17,20 @@ public class Calculadora{
     public void setValorA(int valorA){
         this.valorA = valorA;
     }
+
+    public void setValorA(int valorA, int valorDois){
+        this.valorA = valorA + valorDois;
+    }
+
+    public void setValorA(String valorA){
+        if(valorA.equals("Cinco")){
+            this.valorA = 5;    
+        }
+        else {
+            this.valorA = 0;
+        }
+    }
+
     public void setValorB(int valorB){
         this.valorB = valorB;
     }
