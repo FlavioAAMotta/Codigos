@@ -12,6 +12,7 @@ public class Pessoa {
     private String endereco;
     private double dinheiroNaConta;
     private int estoque;
+    public static int quantidadeOlhos = 2;
 
     public String getNome(){
         return nome;

@@ -3,7 +3,9 @@ public class Intro{
    
     public static void main(String[] args){
         Scanner keyboard = new Scanner(System.in);
-
+        double valorSomado = Operacoes.soma(4,2);
+        System.out.println("digite algo");
+        keyboard.next();
         Pessoa cliente = new Pessoa("caio");
         cliente.sobrenome =" Dias";
         Pessoa clienteDois = new Pessoa("caio");
