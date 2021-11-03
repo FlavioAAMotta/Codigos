@@ -4,6 +4,18 @@ public class Intro{
     public static void main(String[] args){
         Scanner keyboard = new Scanner(System.in);
         double valorSomado = Operacoes.soma(4,2);
+        int a = 5;
+        double b = 5.9;
+        double c = 4.9;
+        double d = 3.9;
+        double aCast = (double) a;
+        int bCast = (int) b;
+        int cCast = (int) c;
+        int dCast = (int) d;
+        System.out.println("int antes do cast: " + a + " int depois do cast: " + aCast);
+        System.out.println("soma double antes do cast: " + (b+c+d) + " soma double depois do cast: " + (bCast+cCast+dCast));
+        /*
+        
         System.out.println("digite algo");
         keyboard.next();
         Pessoa cliente = new Pessoa("caio");
@@ -27,6 +39,6 @@ public class Intro{
         //cliente.peso = 42;
 
         System.out.println("Flávio");
-        System.out.println(5);
+        System.out.println(5);*/
     }
 }
